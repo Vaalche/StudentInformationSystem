@@ -1,0 +1,8 @@
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\bin\Debug\StudentRepository.exe.config
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\bin\Debug\StudentRepository.exe
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\bin\Debug\StudentRepository.pdb
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\obj\Debug\StudentRepository.csprojResolveAssemblyReference.cache
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\obj\Debug\StudentRepository.exe
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\obj\Debug\StudentRepository.pdb
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\bin\Debug\UserLogin.exe
+D:\TU\Semester 6\ПС\UserLogin\StudentRepository\bin\Debug\UserLogin.pdb
