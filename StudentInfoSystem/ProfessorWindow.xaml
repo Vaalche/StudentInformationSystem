@@ -1,0 +1,19 @@
+﻿<Window x:Class="StudentInfoSystem.ProfessorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="ProfessorWindow" Height="245.262" Width="377.972">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="128" Margin="30,37,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="facNumberFilter" HorizontalAlignment="Left" Height="23" Margin="211,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="facNumberFilterLabel" Content="Филтър по фак.номер" HorizontalAlignment="Left" Margin="211,37,0,0" VerticalAlignment="Top" Height="26" Width="130"/>
+        <Button x:Name="filterButton" Content="Филтър" HorizontalAlignment="Left" Margin="231,106,0,0" VerticalAlignment="Top" Width="90" Click="filterButton_Click" Height="27"/>
+
+    </Grid>
+</Window>

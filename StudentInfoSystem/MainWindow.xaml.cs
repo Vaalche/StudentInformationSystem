@@ -103,7 +103,11 @@ namespace StudentInfoSystem
                 }
                 if(user.role == (int)UserRoles.PROFESSOR)
                 {
-                    FacNumSearchGrid.Visibility = Visibility.Visible;
+                    //FacNumSearchGrid.Visibility = Visibility.Visible;
+                    ProfessorWindow main = new ProfessorWindow();
+                    App.Current.MainWindow = main;
+                    this.Close();
+                    main.Show();
                 }
             }
         }
