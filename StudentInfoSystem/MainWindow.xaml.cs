@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using StudentRepository;
+using System.Collections.Generic;
 using UserLogin;
 
 namespace StudentInfoSystem
@@ -10,6 +11,7 @@ namespace StudentInfoSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -17,6 +19,8 @@ namespace StudentInfoSystem
             UserData.ResetTestUserData();
             DisableForm();
         }
+
+
 
         private void ClearForm()
         {
@@ -33,15 +37,15 @@ namespace StudentInfoSystem
 
         private void FillStudentInfo(Student student)
         {
-            firstNameTextBox.Text = student.firstName;
-            secondNameTextBox.Text = student.secondName;
-            lastNameTextBox.Text = student.lastName;
-            SpecialtyTextBox.Text = student.specialty;
-            FacultyTextBox.Text = student.faculty;
-            FNumTextBox.Text = student.facNumber;
-            CourseTextBox.Text = student.year.ToString();
-            StreamTextBox.Text = student.stream.ToString();
-            GroupTextBox.Text = student.group.ToString();
+            firstNameTextBox.Text = student.FirstName;
+            secondNameTextBox.Text = student.SecondName;
+            lastNameTextBox.Text = student.LastName;
+            SpecialtyTextBox.Text = student.Specialty;
+            FacultyTextBox.Text = student.Faculty;
+            FNumTextBox.Text = student.FacNumber;
+            CourseTextBox.Text = student.Year.ToString();
+            StreamTextBox.Text = student.Stream.ToString();
+            GroupTextBox.Text = student.Group.ToString();
         }
 
         private void DisableLoginForm()

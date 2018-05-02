@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:StudentInfoSystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="378.534" Width="978.2">
+    <Window.DataContext>
+        <local:DataContext/>
+    </Window.DataContext>
     <Grid x:Name="FormGrid" Margin="276,19,0,0" RenderTransformOrigin="0.504,0.497" Height="317" VerticalAlignment="Top" HorizontalAlignment="Right" Width="675">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="285*"/>
@@ -39,7 +42,7 @@
                 <TextBox x:Name="CourseTextBox" HorizontalAlignment="Left" Height="22" Margin="344,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101"/>
                 <TextBox x:Name="StreamTextBox" HorizontalAlignment="Left" Height="22" Margin="344,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101"/>
                 <TextBox x:Name="GroupTextBox" HorizontalAlignment="Left" Height="22" Margin="344,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101"/>
-                <ComboBox x:Name="OKSComboBox" HorizontalAlignment="Left" Margin="111,72,0,0" VerticalAlignment="Top" Width="141"/>
+                <ComboBox x:Name="OKSComboBox" ItemsSource="{Binding OksChoices}" SelectedItem="{Binding SelectedOksChoice}"  HorizontalAlignment="Left" Margin="111,72,0,0" VerticalAlignment="Top" Width="141"/>
                 <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="111,98,0,0" VerticalAlignment="Top" Width="141"/>
             </Grid>
         </GroupBox>

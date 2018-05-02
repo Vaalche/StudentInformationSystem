@@ -6,12 +6,18 @@
         xmlns:local="clr-namespace:StudentInfoSystem"
         mc:Ignorable="d"
         Title="ProfessorWindow" Height="245.262" Width="377.972">
+    <Window.DataContext>
+        <local:DataContext/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="128" Margin="30,37,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="facNumberFilter" HorizontalAlignment="Left" Height="23" Margin="211,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <ListBox x:Name="listBox" SelectedValue="{Binding SelectedStudentFacNumber}"
+                 DisplayMemberPath="FirstAndLastName"
+                 SelectedValuePath="FacNumber"
+                 HorizontalAlignment="Left" Height="128" Margin="30,37,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="facNumberFilter" Text="{Binding SelectedStudentFacNumber}" HorizontalAlignment="Left" Height="23" Margin="211,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
         <Label x:Name="facNumberFilterLabel" Content="Филтър по фак.номер" HorizontalAlignment="Left" Margin="211,37,0,0" VerticalAlignment="Top" Height="26" Width="130"/>
         <Button x:Name="filterButton" Content="Филтър" HorizontalAlignment="Left" Margin="231,106,0,0" VerticalAlignment="Top" Width="90" Click="filterButton_Click" Height="27"/>
 

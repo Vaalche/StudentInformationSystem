@@ -32,20 +32,18 @@ namespace StudentInfoSystem
             {
                 foreach (Student stud in StudentData.TestStudents)
                 {
-                    ListBoxItem studentItem = new ListBoxItem();
-                    studentItem.Content = stud.firstName + stud.lastName;
-                    listBox.Items.Add(studentItem);
+                    
+                    listBox.Items.Add(stud);
                 }
             }
             else
             {
                 foreach (Student stud in StudentData.TestStudents)
                 {
-                    if (stud.facNumber.StartsWith(facNumber))
+                    if (stud.FacNumber.StartsWith(facNumber))
                     {
-                        ListBoxItem studentItem = new ListBoxItem();
-                        studentItem.Content = stud.firstName + stud.lastName;
-                        listBox.Items.Add(studentItem);
+                        
+                        listBox.Items.Add(stud);
                     }
                 }
             }
